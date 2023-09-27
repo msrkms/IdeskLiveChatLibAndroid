@@ -33,17 +33,30 @@ android {
     }
 }
 
-publishing {
-    publications {
-        maven(MavenPublication) {
-            groupId 'com.idesk360'
-            artifactId 'idesklivechatlib'
-            version '1.0.0'
-            artifact("$buildDir/outputs/aar/idesklivechatlib-release.aar")
+afterEvaluate {
+    publishing {
+        publications {
+            release(MavenPublication) {
+                from components.release
+
+                groupId = 'com.github.msrkms'
+                artifactId = 'idesklivechatlib'
+                version = '1.0.0'
+            }
         }
     }
-
 }
+//publishing {
+//    publications {
+//        maven(MavenPublication) {
+//            groupId 'com.idesk360'
+//            artifactId 'idesklivechatlib'
+//            version '1.0.0'
+//            artifact("$buildDir/outputs/aar/idesklivechatlib-release.aar")
+//        }
+//    }
+//
+//}
 
 dependencies {
 
