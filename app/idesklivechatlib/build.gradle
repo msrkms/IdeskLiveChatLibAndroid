@@ -42,6 +42,7 @@ publishing {
             artifact("$buildDir/outputs/aar/idesklivechatlib-release.aar")
         }
     }
+
 }
 
 dependencies {
