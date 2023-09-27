@@ -39,7 +39,7 @@ afterEvaluate {
             release(MavenPublication) {
                 from components.release
 
-                groupId = 'com.github.msrkms'
+                groupId = 'com.github.Codeware-Ltd'
                 artifactId = 'idesklivechatlib'
                 version = '1.0.0'
             }
