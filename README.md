@@ -62,12 +62,12 @@ import com.idesk360.idesklivechatlib.model.IdeskChatSDKConfig
 2. Inside your button's click listener, create an `IdeskChatSDKConfig` object with the required parameters:
 
 ```kotlin
-val sdkConfig = IdeskChatSDKConfig(
-    resourceUri = "xxxx.idesk360.com",
-    appUri = "xxx.idesk360.com",
-    pageId = "xxxxxxx",
-    miscellaneous = mapOf("float" to 0),
-    customerInfo = mapOf("name" to "xxx", "rmn" to "xxxxx")
+ val sdkConfig = IdeskChatSDKConfig(
+    resourceUri = "xxxx.idesk360.com",//required
+    appUri = "xxx.idesk360.com",//required
+    pageId = "xxxxxxx",//required
+    miscellaneous = mapOf("float" to 0),//optional,
+    customerInfo = mapOf("name" to "xxx", "rmn" to "xxxxx")//optional
 )
 ```
 

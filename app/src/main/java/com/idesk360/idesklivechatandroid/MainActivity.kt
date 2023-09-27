@@ -15,11 +15,11 @@ class MainActivity : AppCompatActivity() {
 
         button.setOnClickListener {
             val sdkConfig = IdeskChatSDKConfig(
-                resourceUri = "toolstatic.idesk360.com",
-                appUri = "tool.idesk360.com",
-                pageId = "1694592792000",
-                miscellaneous = mapOf("float" to 0),
-                customerInfo = mapOf("name" to "kamal", "rmn" to "019667653443")
+                resourceUri = "xxxx.idesk360.com",//required
+                appUri = "xxx.idesk360.com",//required
+                pageId = "xxxxxxx",//required
+                miscellaneous = mapOf("float" to 0),//optional,
+                customerInfo = mapOf("name" to "xxx", "rmn" to "xxxxx")//optional
             )
 
             IdeskLiveChat(sdkConfig, this).OpenChatWindow();
