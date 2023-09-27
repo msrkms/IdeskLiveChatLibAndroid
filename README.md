@@ -22,7 +22,7 @@ To use the IdeskLiveChat Android SDK, you'll need to add it as a dependency in y
 
 ```gradle
 dependencies {
-    implementation 'com.github.Codeware-Ltd:IdeskLiveChatAndroid:1.0.0'
+   	implementation 'com.github.Codeware-Ltd:IdeskLiveChatLibAndroid:latest_version'
 }
 ```
 
@@ -34,8 +34,8 @@ To open the chat window when a button is clicked, follow these steps:
 1. Import the necessary classes at the top of your Kotlin file:
 
 ```kotlin
-import com.idesk360.livechatsdk.IdeskLiveChat
-import com.idesk360.livechatsdk.model.IdeskChatSDKConfig
+import com.idesk360.idesklivechatlib.IdeskLiveChat
+import com.idesk360.idesklivechatlib.model.IdeskChatSDKConfig
 ```
 
 2. Inside your button's click listener, create an `IdeskChatSDKConfig` object with the required parameters:
