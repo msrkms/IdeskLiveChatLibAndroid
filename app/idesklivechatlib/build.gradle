@@ -1,6 +1,7 @@
 plugins {
     id 'com.android.library'
     id 'org.jetbrains.kotlin.android'
+    id 'maven-publish'
 }
 
 android {
@@ -29,6 +30,17 @@ android {
     }
     kotlinOptions {
         jvmTarget = '1.8'
+    }
+}
+
+publishing {
+    publications {
+        maven(MavenPublication) {
+            groupId 'com.idesk360'
+            artifactId 'idesklivechatlib'
+            version '1.0.0'
+            artifact("$buildDir/outputs/aar/idesklivechatlib-release.aar")
+        }
     }
 }
 
