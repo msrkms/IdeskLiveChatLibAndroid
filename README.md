@@ -26,6 +26,27 @@ dependencies {
 }
 ```
 
+Also enable data binding in your app's `build.gradle` file:
+
+```gradle
+android {
+    ...
+    dataBinding {
+        enabled = true
+    }
+}
+```
+Or 
+
+```gradle
+android {
+    ...
+    buildFeatures {
+        dataBinding = true
+    }
+}
+```
+
 
 ## Usage
 
